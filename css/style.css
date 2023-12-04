@@ -509,7 +509,6 @@ body {
 
 
 #avatar-img {
-  /* margin-top: 90px; */
   height: 150px;
   border: solid 5px transparent;
   border-image: linear-gradient(243deg, rgba(13, 33, 48, 1) 0%, rgba(255, 253, 247, 1) 47%, rgba(13, 33, 48, 1) 100%);

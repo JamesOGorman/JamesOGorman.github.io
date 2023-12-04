@@ -151,6 +151,8 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY
   console.log(scrolled);
-if (scrolled < 677) { navBar.classList.remove('sticky') }
+if (scrolled > 677) {
+  console.log("sticky")
+  navBar.classList.add('sticky') }
 })
 
