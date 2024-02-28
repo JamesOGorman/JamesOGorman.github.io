@@ -193,64 +193,17 @@ canvas {
 }
 
 
-/* ---- stats.js ---- */
-
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  /* -webkit-user-select: none; */
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-
 
 /* ---- particles.js container ---- */
 
 #particles-js {
   width: 100%;
   height: 100%;
-  background-color: #063535;
-  background-color: #000022;
-  background-color: #0D2130;
-  background-color: #081621;
+
 
   background-image: linear-gradient(to right, #141e30, #243b55);
 
   background-image: linear-gradient(to right, #081621, #063535);
-
-  /* background-color: #040B10; */
-  /* background-color: #A3B18A; */
-  /* background-image: url(/demo/images/pexels-photo-176851.jpeg
-); */
 
   background-size: cover;
   background-position: 50% 50%;
@@ -276,8 +229,21 @@ canvas {
 
 .sticky{
   top: 0;
+  height: 50px;
   position:fixed;
   width: 100vw;
+  animation: 2s stickyNav;
+}
+
+@keyframes stickyNav {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
 }
 
 
@@ -323,27 +289,11 @@ body {
 
     padding: 0px 0px;
     margin: 0px;
-
-
-    border-radius: 0px;
-    color: white;
-
-    font-size: 2vw;
-
   }
 
   100% {
     opacity: 1;
     transform: translateY(0);
-
-    padding: 5px 20px;
-
-    margin: 10px;
-
-
-    border-radius: 5px;
-
-    font-size: 2vw;
   }
 
 }
@@ -433,6 +383,7 @@ body {
   box-shadow: 5px 5px 2.5px 0px rgba(0, 0, 0, 0.75);
 }
 
+
 /* change the border color on the border to match the new color pallet */
 #navbar {
   height: 50px;
@@ -459,7 +410,7 @@ body {
   font-size: 20px;
   color: #ccc;
   font-weight: bold;
-  transition: 2sec;
+  transition: 0.5s;
 }
 
 
@@ -471,6 +422,20 @@ body {
 }
 
 
+.all-container{
+  animation: 5s appear;
+}
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+  
+      100% {
+        opacity: 1;
+      }
+  
+    }
 
 .section-header {
   margin-top: 30px;
